@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+header{
+    background-color: brown;   
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo__link{
+    font-size: 35px;
+    color: chartreuse;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav__ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.nav__list{
+    padding: 10px 15px;
+}
+.nav__list:hover{
+    background-color: rgb(128, 6, 6);
+    cursor: pointer;
+}
+.nav__link{
+    /* position: relative; */
+    text-decoration: none;
+    color: aqua;
+    font-weight: 700;
+    font-size: 25px;
+}
+.drop{
+    position: relative;
+    width: 250%;
+    display: none;
+}
+.drop__ul{
+    position: absolute;
+    list-style: none;
+    top: 10px;
+    left: -15px;
+    background-color:brown ;
+}
+.drop__list{
+    padding: 10px 15px ;
+}
+.drop__list:hover{
+    background-color: chartreuse;
+}
+.drop__list:hover a{
+    color: black;
+}
+.drop__link{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.nav__link.active + .drop{
+    display: block;
+}
+.second__drop{
+    position: relative;
+    display: none;
+}
+.second__ul{
+    position: absolute;
+    list-style: none;
+    top: -33px;
+    background-color: brown;
+    right: -138px;
+}
+.drop__link.active + .second__drop{
+    display: block;
+}
